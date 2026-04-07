@@ -10,7 +10,7 @@ Create this structure first:
 C:\nerf_project\
     colmap2nerf.py
     resize_room.py
-    fix_room_json.py
+    fix.py
     auditorium\
         images\
 ```
@@ -135,12 +135,12 @@ C:\nerf_project\auditorium\transforms.json
 
 ---
 
-## Step 6: Create `fix_room_json.py`
+## Step 6: Create `fix.py`
 
 Save this file as:
 
 ```text
-C:\nerf_project\fix_room_json.py
+C:\nerf_project\fix.py
 ```
 
 Code:
@@ -172,7 +172,7 @@ Run it:
 
 ```cmd
 cd C:\nerf_project
-python fix_room_json.py
+python fix.py
 ```
 
 ---
@@ -244,7 +244,7 @@ colmap
 cd C:\nerf_project
 python colmap2nerf.py --images "C:\nerf_project\auditorium\resized" --run_colmap --aabb_scale 2 --out "C:\nerf_project\auditorium\transforms.json"
 cd C:\nerf_project
-python fix_room_json.py
+python fix.py
 C:\Instant-NGP\instant-ngp.exe
 ```
 
